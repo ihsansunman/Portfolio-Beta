@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+header{
+	background:white;
+	width: 100%;
+	position: relative;
+	padding: 10px 20px 10px 10px;
+	text-align: right;
+	z-index: 1;
+	margin: 0 auto;
+}
+.sticky{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header1{
+	padding-top: 0px;
+}
+.menu li{
+	list-style: none; 	
+	display: inline-block;
+}
+.menu li a{
+	text-decoration: none;
+	color: #000;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: block;
+	opacity: 1;
+	padding: 0 15px;
+	font-size: 16px;
+	line-height: 30px;
+}
+.menu li a:hover{
+	background: #218DA6;
+    border-radius: 10px 30px;
+    color: white;
+}
+@media screen and (max-width: 600px) {
+  .menu li {
+    float: none;
+    width: 100%;
+  }
+}
+
+.logo{
+	width: 15%;
+	float: left;
+	text-transform: uppercase;
+	color: #000;
+	font-size: 25px;
+	text-align: center;
+	padding-left: 2%;
+}
+.nav1{
+	height: 5 0px;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	background-color: #218DA6;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.menu2 li {
+	list-style: none;
+	display: inline-block;
+}
+.menu2 li a, .altbuton{
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: block;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 30px;
+}
+.menu2 li a:hover{
+	color: #218DA6;
+	background-color: white;
+}
+.menu2 li ol li{
+	display: none;	
+}
+.menu2 li:hover ol li{
+	display: block;
+	}
+
+li.altmenu {
+  display: inline-block;
+}
+
+.altmenu2 {
+  display: none;
+  position: absolute;
+  background-color: #218DA6;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.altmenu2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.altmenu2 a:hover {background-color: #f1f1f1;}
+
+.altmenu:hover .altmenu2 {
+  display: block;
+}
+.logo a:link{
+	text-decoration: none;
+	color: #000;
+}
+.logo a:visited{
+	text-decoration: none;
+	color:#000;
+}
+.aktif {
+  background-color: #145665;
+}
